@@ -1,0 +1,38 @@
+@media (max-width: 991px) {
+  .header-top {
+    display: none;
+  }
+  .db-mobile {
+    display: block !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .serach-frm {
+    transform: translate(-50%, -50%);
+    left: 50%;
+    width: 100%;
+    border: 0;
+    border-radius: 0;
+  }
+  .serices-row .col-md-4 {
+    border-right: 0;
+  }
+  .border-b-md {
+    border-bottom: 0.1rem solid var(--border-color) !important;
+  }
+  section {
+    padding: 5rem 1rem;
+  }
+  .gap-md-2 {
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 550px) {
+  .carousel-inner .carousel-item {
+    height: 47rem;
+  }
+}
+@media (max-width: 350px) {
+}
