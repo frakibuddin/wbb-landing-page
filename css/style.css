@@ -104,6 +104,8 @@ header {
   position: sticky;
   top: -7rem;
   z-index: 999;
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
 }
 
 .header-top {
@@ -587,6 +589,10 @@ footer {
   padding: 6rem 0;
   background-color: #198754;
 }
+.copywrite-txt {
+  background-color: #198754dc;
+  padding: 1rem;
+}
 ul {
   padding-left: 0;
   list-style: none;
@@ -635,4 +641,139 @@ ul {
   justify-content: space-between;
   border-bottom: 1px solid var(--border-color);
   padding: 0.8rem 0;
+}
+
+/* vitual office karachi page */
+.banner-section {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)),
+    url(../img/cow.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 10rem 0;
+}
+.video iframe {
+  width: 90%;
+  height: 30rem;
+  object-fit: cover;
+}
+/* gallery section */
+.gallery-section {
+  background: var(--white-gray);
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 9rem;
+  overflow: hidden;
+}
+.gallery-inner {
+  position: relative;
+}
+.customNavigation .btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -3rem;
+}
+.customNavigation .btn.next {
+  left: inherit;
+  right: -3rem;
+}
+#owl-gallery .item {
+  margin: 1rem;
+  border-radius: 0.5rem;
+  transition: 0.3s;
+  border: 1px solid var(--border-color);
+  background: #fff;
+}
+#owl-gallery .item:hover a img {
+  padding: 0.2rem;
+}
+#owl-gallery .item a img {
+  overflow: hidden;
+  width: 100%;
+  padding: 1rem;
+  transition: 0.3s;
+}
+.gallery-inner .owl-theme .owl-controls {
+  display: none !important;
+}
+.g-box {
+  text-align: center;
+  background: var(--white-gray);
+  padding: 4rem 2.5rem;
+  border-radius: 1rem;
+  border: 1px solid var(--border-color);
+  transition: 0.3s;
+  margin: 0.8rem 0;
+}
+.g-box:hover {
+  transform: scale(1.05);
+}
+.g-box .icon {
+  background: #19875425;
+  width: 9rem;
+  height: 9rem;
+  margin: auto;
+  padding: 1.8rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.g-box .icon img {
+  width: 100%;
+}
+.g-box a {
+  text-decoration: none;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 1rem 0;
+  display: block;
+  color: var(--black-color);
+  padding-top: 0.8rem;
+}
+/* faq section style */
+.faq-section {
+  background: var(--white-gray);
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+}
+.accordion {
+  max-height: 40rem;
+  overflow-y: scroll;
+}
+.accordion::-webkit-scrollbar {
+  background: transparent;
+  width: 1rem;
+}
+.accordion::-webkit-scrollbar-thumb {
+  background: var(--border-color);
+  border-radius: 1rem;
+}
+.accordion-button {
+  font-size: 1.8rem;
+  font-weight: 600;
+  background: transparent !important;
+  padding: 1.5rem 1.25rem;
+}
+.accordion-button:focus {
+  box-shadow: inherit;
+}
+.accordion-button:not(.collapsed)::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e") !important;
+}
+.accordion-button:not(.collapsed) {
+  background: #198754 !important;
+  color: #fff;
+}
+.accordion-item {
+  background: transparent !important;
+}
+.how-work-section {
+  background: var(--white-gray);
+  border-top: 1px solid var(--border-color);
+}
+/* FTP from style */
+.ftp-frm {
+  background: #198754;
+  padding: 5rem;
 }
