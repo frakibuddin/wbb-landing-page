@@ -45,7 +45,5 @@ $(document).ready(function () {
 
   owl_single_sm.owlCarousel({
     items: 1,
-    itemsDesktop: [1000, 1],
-    itemsMobile: false,
   });
 });
