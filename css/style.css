@@ -324,6 +324,7 @@ header {
   background: var(--white-gray) !important;
   color: var(--white-color);
   border-bottom: 0.1rem solid var(--border-color);
+  backdrop-filter: blur(2rem);
 }
 .navbar-nav {
   width: 100%;
@@ -452,17 +453,24 @@ header {
   align-items: center;
   gap: 1rem;
 }
-.tranding-client div {
+.tranding-client a {
   width: 8rem;
   background: #ffffffab;
   border-radius: 1rem;
   border: 0.1rem solid var(--border-color);
   padding: 0.8rem 0.5rem;
   text-align: center;
+  text-decoration: none;
 }
-.tranding-client div p {
+.tranding-client a p {
   margin-top: 0.5rem;
   font-size: 1.2rem;
+}
+.tranding-client a img {
+  transition: 0.3s;
+}
+.tranding-client a:hover img {
+  transform: scale(1.1);
 }
 
 /* Hero section style */
@@ -1150,9 +1158,8 @@ ul {
 
 .list-box {
   min-height: 50rem;
-  background: #19875456;
-  -webkit-backdrop-filter: blur(3rem);
-  backdrop-filter: blur(3rem);
+  background: #19875478;
+  backdrop-filter: blur(3rem) !important;
   padding: 4rem;
   border: 0.1rem solid var(--border-color);
   border-radius: 1rem;
@@ -1480,6 +1487,8 @@ ul {
 /* card */
 .services-section {
   background: var(--white-gray);
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
 }
 .card {
   -webkit-transition: 0.3s;

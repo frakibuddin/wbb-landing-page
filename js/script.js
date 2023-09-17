@@ -64,11 +64,11 @@ dropDownLink.forEach((element) => {
 });
 
 //omload popup show
-$(window).on("load", function () {
-  setTimeout(() => {
-    $(".modal").modal("show");
-  }, 3000);
-});
+// $(window).on("load", function () {
+//   setTimeout(() => {
+//     $(".modal").modal("show");
+//   }, 3000);
+// });
 
 // onscroll animation
 const scrollElements = document.querySelectorAll(".js-scroll");
@@ -128,4 +128,18 @@ window.onscroll = function () {
 
 tap_top_btn.onclick = function () {
   document.documentElement.scrollTop = 0;
+};
+
+//
+let ab = document.querySelector(".floating-select");
+ab.onchange = () => {
+  if (ab.value == "kochi") {
+    window.location.href = "/virtual-office-in-kochi.html";
+  } else if (ab.value == "delhi") {
+    window.location.href = "/virtual-office-in-kochi.html";
+  } else if (ab.value == "bangalore") {
+    window.location.href = "/virtual-office-in-kochi.html";
+  } else if (ab.value == "chennai") {
+    window.location.href = "/virtual-office-in-kochi.html";
+  }
 };

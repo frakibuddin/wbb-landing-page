@@ -1,4 +1,7 @@
 @media (max-width: 991px) {
+  header {
+    top: 0;
+  }
   .header-top {
     display: none;
   }
