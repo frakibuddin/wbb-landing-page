@@ -18,6 +18,7 @@ body {
 }
 section {
   padding: 6rem 0;
+  overflow: hidden;
 }
 :root {
   --black-color: rgb(15 23 42 / 1);

@@ -64,11 +64,11 @@ dropDownLink.forEach((element) => {
 });
 
 //omload popup show
-// $(window).on("load", function () {
-//   setTimeout(() => {
-//     $(".modal").modal("show");
-//   }, 3000);
-// });
+$(window).on("load", function () {
+  setTimeout(() => {
+    $(".modal").modal("show");
+  }, 3000);
+});
 
 // onscroll animation
 const scrollElements = document.querySelectorAll(".js-scroll");
