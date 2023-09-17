@@ -14,25 +14,89 @@
 </head>
 
 <body>
+    <!-- popup start -->
+    <div class="modal fade popup" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
 
+        <div class="modal-dialog show">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title fs-2 fw-bold" id="exampleModalLabel">Download Broucher
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body px-5 py-3">
+                    <div class="ftp-frms">
+                        <form action="" class="">
+                            <div class="form-group mt-4">
+                                <input type="text" class="form-control" placeholder="Name">
+                            </div>
+                            <div class="input-group mt-4 ">
+                                <input type="text" class="form-control" placeholder="Contact Number"
+                                    aria-label="Recipient's username" aria-describedby="basic-addon2">
+
+                                <button class="btn btn-primary btn-lg ml-4">Send OTP</button>
+                            </div>
+                            <div class="form-group mt-4">
+                                <input type="text" class="form-control" placeholder="OTP">
+                            </div>
+                            <div class="form-group mt-4">
+                                <input type="text" class="form-control" placeholder="Email">
+                            </div>
+                            <div class="form-group mt-4">
+                                <select name="" class="form-control" id="">
+                                    <option value="" disabled selected>Select Virtual Office</option>
+                                    <option value="">Kochi</option>
+                                    <option value="">Bangalore</option>
+                                    <option value="">Chennai</option>
+                                    <option value="">Delhi</option>
+                                </select>
+                            </div>
+                            <div class="form-group mt-4">
+                                <select name="" class="form-control " id="">
+                                    <option value="" disabled selected>Select Virtual Office Co-working Space</option>
+                                    <option value="">Kochi</option>
+                                    <option value="">Bangalore</option>
+                                    <option value="">Chennai</option>
+                                    <option value="">Delhi</option>
+                                </select>
+
+                            </div>
+
+                            <div class="form-group mt-4">
+                                <textarea name="" class="form-control rounded" rows="3"
+                                    placeholder="Message"></textarea>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-success">Download Brochure</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- popup end -->
     <!--================== start-header ==================-->
     <header>
         <div class="container">
             <div class="header-top">
                 <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="logo"></a>
                 <div class="header-info">
-                    <div class="contact-info">
+                    <div class="contact-info text-success">
                         <i class="fa fa-clock"></i>
                         <p>Mon-Sat (9am - 6pm)</p>
                     </div>
                     <div class="contact-info">
-                        <i class="fa-solid fa-envelope"></i>
+                        <i class="fa-solid fa-envelope text-success"></i>
                         <p><a class="text-dark text-decoration-none "
                                 href="mailto:info@wbboffice.com">info@wbboffice.com</a></p>
                     </div>
-                    <div class="contact-info">
+                    <div class="contact-info text-success">
                         <i class="fa fa-phone"></i>
-                        <p><a href="" class="text-dark text-decoration-none">+918589880002</a></p>
+                        <p><a href="tel:+918589880002" class="text-dark text-decoration-none">+918589880002</a></p>
                     </div>
                 </div>
             </div>
@@ -51,24 +115,30 @@
                     <div class="navbar-collapse collapse" id="myNav">
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a class="nav-link" href="index.html">Home </a>
+                                <a class="nav-link active" href="index.html">Home </a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="about.html">About</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Services</a>
+                                <a class="nav-link" href="services.html">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="prices.html">Prices</a>
                             </li>
                             <li class="nav-item dropdown " id="dropDown-link">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">Virtual Office</a>
+                                <a class="nav-link dropdown-toggle" href="javascript:void(0)"
+                                    id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">Virtual Office</a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                     <a class="dropdown-item" href="virtual-office-in-kochi.html">Virtual Office in
                                         Kochi</a>
-                                    <a class="dropdown-item" href="">Virtual Office in Bangalore</a>
-                                    <a class="dropdown-item" href="">
+                                    <a class="dropdown-item" href="virtual-office-in-kochi.html">Virtual Office in
+                                        Bangalore</a>
+                                    <a class="dropdown-item" href="virtual-office-in-kochi.html">
                                         Virtual Office In Chennai</a>
-                                    <a class="dropdown-item" href="">Virtual office Delhi</a>
+                                    <a class="dropdown-item" href="virtual-office-in-kochi.html">Virtual office
+                                        Delhi</a>
                                 </div>
                             </li>
                             <li class="nav-item dropdown " id="dropDown-link">
@@ -76,39 +146,36 @@
                                     data-bs-toggle="dropdown" aria-expanded="false">Co working Space</a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                     <a class="dropdown-item" href="coworking-space.html">WBB Kochi</a>
-                                    <a class="dropdown-item" href="">WBB Bangalore</a>
-                                    <a class="dropdown-item" href="">
+                                    <a class="dropdown-item" href="coworking-space.html">WBB Bangalore</a>
+                                    <a class="dropdown-item" href="coworking-space.html">
                                         WBB Chennai</a>
-                                    <a class="dropdown-item" href="">Virtual office Delhi</a>
+                                    <a class="dropdown-item" href="coworking-space.html">Virtual office Delhi</a>
                                 </div>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Contact</a>
+                                <a class="nav-link" href="contact.html">Contact</a>
                             </li>
                             <li class="nav-item ">
                                 <a class="border-1 hovre-white hovre-whit-btn fw-bold btn btn-outline-success rounded-pill"
                                     href="#">Book Your Space</a>
                             </li>
-                            <!-- <li class="nav-item">
-                                <a class="border-1 fw-500 btn btn-outline-success rounded-pill" href="#">Get a Live
-                                    Quote</a>
-                            </li> -->
 
                         </ul>
                         <div class="d-none db-mobile mt-5 mb-5">
                             <div class="header-info2 text-dark">
                                 <div class="contact-info mb-5 mt-5">
-                                    <i class="fa fa-clock "></i>
+                                    <i class="fa fa-clock text-success"></i>
                                     <p>Mon-Sat (9am - 6pm)</p>
                                 </div>
                                 <div class="contact-info mb-5 mt-5">
-                                    <i class="fa-regular fa-envelope"></i>
+                                    <i class="fa-regular fa-envelope text-success"></i>
                                     <p><a class="text-dark text-decoration-none"
                                             href="mailto:info@wbboffice.com">info@wbboffice.com</a></p>
                                 </div>
                                 <div class="contact-info mb-5 mt-5">
-                                    <i class="fa fa-phone"></i>
-                                    <p><a href="" class="text-dark text-decoration-none">+918589880002</a></p>
+                                    <i class="fa fa-phone text-success"></i>
+                                    <p><a href="tel:+918589880002"
+                                            class="text-dark text-decoration-none">+918589880002</a></p>
                                 </div>
                             </div>
                         </div>
@@ -121,7 +188,7 @@
 
     <!-- Start Hero section -->
     <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="carousel">
-        <form class="serach-frm">
+        <form class="serach-frm js-scroll scrolled fade-in">
             <h2 class="frm-heading m">Bid farewell to exorbitant office rent in India!</h2>
             <h3 class="frm-heading-sub-heading">Make the transition to a virtual office</h3>
             <div class="floating-label mt-5 mb-5">
@@ -133,7 +200,7 @@
                     <option value="4">Virtual Office in Chennai</option>
                 </select>
                 <span class="highlight"></span>
-                <label>Find virtual address in</label>
+                <label class="floating-labels">Find virtual address in</label>
             </div>
             <div class="mt-4">
                 <small class="mb-3">Trending Cities</small>
@@ -174,18 +241,17 @@
             <div class="carousel-item" style="background: url('../img/banner-slider1.png');">
             </div>
         </div>
-
     </div>
     <!--================== end-hero section ==================-->
 
     <!--================== Start testimonial section ==================-->
     <section class="textiomonial-section">
         <div class="container">
-            <div class="section-heading">
+            <div class="section-heading js-scroll fade-in">
                 <h2>OUR CUSTOMER REVIEWS</h2>
                 <h3>Let’s see what our customer say’s about us</h3>
             </div>
-            <div id="owl-demo" class="owl-carousel owl-theme ">
+            <div id="owl-demo" class="owl-carousel owl-theme js-scroll fade-in-bottom">
                 <div class="item">
                     <figure class="snip1533">
                         <figcaption>
@@ -279,17 +345,17 @@
     <!--================== Start useable section ==================-->
     <section class="useable-section">
         <div class="container">
-            <div class="section-heading">
+            <div class="section-heading js-scroll fade-in">
                 <h2>Bye Bye to</h2>
                 <h3>Traditional office investments</h3>
             </div>
             <div class="row align-items-center">
-                <div class="col-md-6">
+                <div class="col-md-6 my-5 js-scroll slide-left">
                     <div class="text-center">
                         <img src="img/completed.svg" class="w-75" alt="">
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 js-scroll slide-right">
                     <div class="d-flex gap-4 align-items-center">
                         <div class="icon-box">
                             <i class="fa-solid fa-building display-2 text-success icon"></i>
@@ -346,14 +412,17 @@
 
         </div>
     </section>
+    <!--================== End useable section ==================-->
+
+
     <!--================== Start services section ==================-->
     <section class="services-section">
         <div class="container">
-            <div class="section-heading">
+            <div class="section-heading js-scroll fade-in">
                 <h2>Simply move in and start working</h2>
                 <h3>Virtual Office for GST Registration</h3>
             </div>
-            <div class="row serices-row">
+            <div class="row serices-row js-scroll fade-in-bottom">
                 <div class="col-md-4 border-bottom p-lg-5 p-md-5 p-0 ">
                     <div>
                         <i class="fa-solid fa-house-laptop display-2 mb-3 text-success"></i>
@@ -416,15 +485,15 @@
     <!--================== Start GST section ==================-->
     <section class="gst-section">
         <div class="container">
-            <div class="section-heading">
+            <div class="section-heading js-scroll fade-in">
                 <h2>Virtual office for GST registration</h2>
                 <h3>WBB Office - Cochin, Bangalore & Chennai</h3>
             </div>
             <div class="row align-items-center">
-                <div class="col-md-6">
+                <div class="col-md-6 js-scroll slide-left">
                     <img src="img/banner-side.jpg" class="img-fluid" alt="">
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 js-scroll slide-right">
                     <h3 class="fw-bold text-success mb-3 mt-3 fs-2">We help freelancers & companies to start their
                         business
                         with
@@ -449,64 +518,57 @@
     <!--================== Start Benefits section ==================-->
     <section class="benefits-section">
         <div class="container">
-            <div class="section-heading">
+            <div class="section-heading js-scroll fade-in">
                 <h2>Benefits of using</h2>
                 <h3>Our Virtual Office Solution</h3>
             </div>
             <div class="row ">
-                <div class="col-lg-3 col-md-6">
-                    <div class="img-box-inner">
+                <div class="col-lg-3 col-md-6 js-scroll fade-in-bottom">
+                    <div class="img-box-inner shadow-lg">
                         <div class="hover-content">
-                            <h2 class="fs-2 fw-bold text-light mb-4 mt-3">Mail/Courier Handling</h2>
-                            <p class="text-light">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt ea
-                                laudantium laborum
-                                facere itaque esse nisi provident unde illo earum!</p>
+                            <h2 class="fs-2 fw-bold text-light mb-4 mt-3">Business Address</h2>
+                            <p class="text-light">Get your business a prime location address that increase the
+                                credibility</p>
                         </div>
                         <div class="img-box">
-                            <img src="img/benefit-img-1.webp" alt="">
-                            <h2>Mail/Courier Handling</h2>
+                            <img src="img/current-account.jpg" alt="">
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="img-box-inner">
+                <div class="col-lg-3 col-md-6 js-scroll fade-in-bottom">
+                    <div class="img-box-inner shadow-lg">
                         <div class="hover-content">
-                            <h2 class="fs-2 fw-bold text-light mb-4 mt-3">Mail/Courier Handling</h2>
-                            <p class="text-light">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt ea
-                                laudantium laborum
-                                facere itaque esse nisi provident unde illo earum!</p>
+                            <h2 class="fs-2 fw-bold text-light mb-4 mt-3">Live Support</h2>
+                            <p class="text-light"> Get dedicated reception support and have your calls, mails, courier
+                                handled.
+                            </p>
                         </div>
                         <div class="img-box">
-                            <img src="img/smiling-pretty-indian-businesswoman.webp" alt="">
-                            <h2>Mail/Courier Handling</h2>
+                            <img src="img/virtual-office-s.jpg" alt="">
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="img-box-inner">
+                <div class="col-lg-3 col-md-6 js-scroll fade-in-bottom">
+                    <div class="img-box-inner shadow-lg">
                         <div class="hover-content">
-                            <h2 class="fs-2 fw-bold text-light mb-4 mt-3">Mail/Courier Handling</h2>
-                            <p class="text-light">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt ea
-                                laudantium laborum
-                                facere itaque esse nisi provident unde illo earum!</p>
+                            <h2 class="fs-2 fw-bold text-light mb-4 mt-3">Register your company</h2>
+                            <p class="text-light">Company registration in Bangalore is simple and easy with a virtual
+                                office</p>
                         </div>
                         <div class="img-box">
-                            <img src="img/benefit-img-3.webp" alt="">
-                            <h2>Mail/Courier Handling</h2>
+                            <img src="img/Business-promotion-1.jpg" alt="">
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="img-box-inner">
+                <div class="col-lg-3 col-md-6 js-scroll fade-in-bottom">
+                    <div class="img-box-inner shadow-lg">
                         <div class="hover-content">
-                            <h2 class="fs-2 fw-bold text-light mb-4 mt-3">Mail/Courier Handling</h2>
-                            <p class="text-light">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt ea
-                                laudantium laborum
-                                facere itaque esse nisi provident unde illo earum!</p>
+                            <h2 class="fs-2 fw-bold text-light mb-4 mt-3">Bank account & GST Registration</h2>
+                            <p class="text-light">
+                                we provide GST registration and bank account opening on demand.</p>
                         </div>
                         <div class="img-box">
                             <img src="img/benefit-img-4.webp" alt="">
-                            <h2>Mail/Courier Handling</h2>
                         </div>
                     </div>
                 </div>
@@ -520,13 +582,13 @@
     <section class="deposit-section">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-md-6">
+                <div class="col-md-6 js-scroll slide-left">
                     <h3 class="fw-bold text-success">Sometimes small is better </h3>
                     <h2 class="display-2 fw-bold h1 py-4">Zero Deposit and High Rental - Share office space</h2>
                     <p>WBB offers well designed shared office space and virtual office spaces with ready to use
                         furniture for your business with other business support services in kochi and Banglore.</p>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 js-scroll slide-right">
                     <img src="img/New-Project-1.png" class="img-fluid" alt="">
                 </div>
             </div>
@@ -539,9 +601,10 @@
         <footer>
             <div class="container">
                 <div class="row justify-content-between">
-                    <div class="col-lg-4 col-md-12">
+                    <div class="col-lg-4 col-md-12 mb-lg-0">
                         <a href="index.html"><img src="img/logo-white.png" alt=""></a>
-                        <p class="text-light my-5">Any business need a registration and space to work, here where WBB
+                        <p class="text-light my-5">Any business need a registration and space to work, here where
+                            WBB
                             enters
                             as a solution. People
                             can start their business with our innovative service with just thousands of rupees instead
@@ -553,27 +616,28 @@
                             <li><a href=""><i class="fa-brands fa-linkedin-in"></i></a></li>
                         </ul>
                     </div>
-                    <div class="col-lg-2 col-md-12">
-                        <h2 class="fw-bold text-light mb-5 display-6">Useful Links</h2>
+                    <div class="col-lg-2 col-md-12 mt-lg-0 mt-md-5">
+                        <h2 class="fw-bold text-light mb-4 display-6">Useful Links</h2>
                         <ul class="footer-link">
                             <li><a href="index.html">Home</a></li>
                             <li><a href="about.html">About</a></li>
-                            <li><a href="">Services</a></li>
+                            <li><a href="services.html">Services</a></li>
+                            <li><a href="prices.html">Prices</a></li>
                             <li><a href="virtual-office-in-kochi.html">Virtual Office</a></li>
-                            <li><a href="">Book Your Space</a></li>
-                            <li><a href="">Contact</a></li>
+                            <li><a href="coworking-space.html">Co Working Space</a></li>
+                            <li><a href="contact.html">Contact</a></li>
                         </ul>
                     </div>
-                    <div class="col-lg-2 col-md-12">
-                        <h2 class="fw-bold text-light mb-5 display-6">Virtual office</h2>
+                    <div class="col-lg-2 col-md-12 mt-lg-0 mt-md-5">
+                        <h2 class="fw-bold text-light mb-4 display-6">Virtual office</h2>
                         <ul class="footer-link">
                             <li><a href="virtual-office-in-kochi.html">Kochi</a></li>
-                            <li><a href="">Chennai</a></li>
-                            <li><a href="">Chennai</a></li>
-                            <li><a href="">DelhiLike</a></li>
+                            <li><a href="virtual-office-in-kochi.html">Chennai</a></li>
+                            <li><a href="virtual-office-in-kochi.html">Chennai</a></li>
+                            <li><a href="virtual-office-in-kochi.html">DelhiLike</a></li>
                         </ul>
                     </div>
-                    <div class="col-lg-4 col-md-12">
+                    <div class="col-lg-4 col-md-12 mt-lg-0 mt-md-5">
                         <div class="map">
                             <iframe class=""
                                 src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3501.6751119427167!2d77.2810172755011!3d28.639497775660903!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjjCsDM4JzIyLjIiTiA3N8KwMTcnMDAuOSJF!5e0!3m2!1sen!2sjp!4v1694781175529!5m2!1sen!2sjp"
@@ -590,6 +654,9 @@
     </div>
     <!--================== End Footer section ==================-->
 
+    <div class="tap-toTop ">
+        <i class="fa-solid fa-arrow-up text-success "></i>
+    </div>
 
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>

@@ -16,24 +16,89 @@
 
 <body>
 
+    <!-- popup start -->
+    <div class="modal fade popup" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+
+        <div class="modal-dialog show">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title fs-2 fw-bold" id="exampleModalLabel">Download Broucher
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body px-5 py-3">
+                    <div class="ftp-frms">
+                        <form action="" class="">
+                            <div class="form-group mt-4">
+                                <input type="text" class="form-control" placeholder="Name">
+                            </div>
+                            <div class="input-group mt-4 ">
+                                <input type="text" class="form-control" placeholder="Contact Number"
+                                    aria-label="Recipient's username" aria-describedby="basic-addon2">
+
+                                <button class="btn btn-primary btn-lg ml-4">Send OTP</button>
+                            </div>
+                            <div class="form-group mt-4">
+                                <input type="text" class="form-control" placeholder="OTP">
+                            </div>
+                            <div class="form-group mt-4">
+                                <input type="text" class="form-control" placeholder="Email">
+                            </div>
+                            <div class="form-group mt-4">
+                                <select name="" class="form-control" id="">
+                                    <option value="" disabled selected>Select Virtual Office</option>
+                                    <option value="">Kochi</option>
+                                    <option value="">Bangalore</option>
+                                    <option value="">Chennai</option>
+                                    <option value="">Delhi</option>
+                                </select>
+                            </div>
+                            <div class="form-group mt-4">
+                                <select name="" class="form-control " id="">
+                                    <option value="" disabled selected>Select Virtual Office Co-working Space</option>
+                                    <option value="">Kochi</option>
+                                    <option value="">Bangalore</option>
+                                    <option value="">Chennai</option>
+                                    <option value="">Delhi</option>
+                                </select>
+
+                            </div>
+
+                            <div class="form-group mt-4">
+                                <textarea name="" class="form-control rounded" rows="3"
+                                    placeholder="Message"></textarea>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-success">Download Brochure</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- popup end -->
     <!--================== start-header ==================-->
     <header>
         <div class="container">
             <div class="header-top">
                 <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="logo"></a>
                 <div class="header-info">
-                    <div class="contact-info">
+                    <div class="contact-info text-success">
                         <i class="fa fa-clock"></i>
                         <p>Mon-Sat (9am - 6pm)</p>
                     </div>
                     <div class="contact-info">
-                        <i class="fa-solid fa-envelope"></i>
+                        <i class="fa-solid fa-envelope text-success"></i>
                         <p><a class="text-dark text-decoration-none "
                                 href="mailto:info@wbboffice.com">info@wbboffice.com</a></p>
                     </div>
-                    <div class="contact-info">
+                    <div class="contact-info text-success">
                         <i class="fa fa-phone"></i>
-                        <p><a href="" class="text-dark text-decoration-none">+918589880002</a></p>
+                        <p><a href="tel:+918589880002" class="text-dark text-decoration-none">+918589880002</a></p>
                     </div>
                 </div>
             </div>
@@ -52,63 +117,67 @@
                     <div class="navbar-collapse collapse" id="myNav">
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a class="nav-link" href="index.html">Home </a>
+                                <a class="nav-link active" href="index.html">Home </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">About</a>
+                                <a class="nav-link" href="about.html">About</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Services</a>
+                                <a class="nav-link" href="services.html">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="prices.html">Prices</a>
                             </li>
                             <li class="nav-item dropdown " id="dropDown-link">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">Virtual Office</a>
+                                <a class="nav-link dropdown-toggle" href="javascript:void(0)"
+                                    id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">Virtual Office</a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                    <a class="dropdown-item" href="">Virtual Office in Kochi</a>
-                                    <a class="dropdown-item" href="">Virtual Office in Bangalore</a>
-                                    <a class="dropdown-item" href="">
+                                    <a class="dropdown-item" href="virtual-office-in-kochi.html">Virtual Office in
+                                        Kochi</a>
+                                    <a class="dropdown-item" href="virtual-office-in-kochi.html">Virtual Office in
+                                        Bangalore</a>
+                                    <a class="dropdown-item" href="virtual-office-in-kochi.html">
                                         Virtual Office In Chennai</a>
-                                    <a class="dropdown-item" href="">Virtual office Delhi</a>
+                                    <a class="dropdown-item" href="virtual-office-in-kochi.html">Virtual office
+                                        Delhi</a>
                                 </div>
                             </li>
                             <li class="nav-item dropdown " id="dropDown-link">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">Co working Space</a>
+                                <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink"
+                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">Co working Space</a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                    <a class="dropdown-item" href="">WBB Kochi</a>
-                                    <a class="dropdown-item" href="">WBB Bangalore</a>
-                                    <a class="dropdown-item" href="">
+                                    <a class="dropdown-item" href="coworking-space.html">WBB Kochi</a>
+                                    <a class="dropdown-item" href="coworking-space.html">WBB Bangalore</a>
+                                    <a class="dropdown-item" href="coworking-space.html">
                                         WBB Chennai</a>
-                                    <a class="dropdown-item" href="">Virtual office Delhi</a>
+                                    <a class="dropdown-item" href="coworking-space.html">Virtual office Delhi</a>
                                 </div>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Contact</a>
+                                <a class="nav-link" href="contact.html">Contact</a>
                             </li>
-                            <li class="nav-item ">
+                            <li class="nav-item">
                                 <a class="border-1 hovre-white hovre-whit-btn fw-bold btn btn-outline-success rounded-pill"
                                     href="#">Check Availability</a>
                             </li>
-                            <!-- <li class="nav-item">
-                                <a class="border-1 fw-500 btn btn-outline-success rounded-pill" href="#">Get a Live
-                                    Quote</a>
-                            </li> -->
 
                         </ul>
                         <div class="d-none db-mobile mt-5 mb-5">
                             <div class="header-info2 text-dark">
                                 <div class="contact-info mb-5 mt-5">
-                                    <i class="fa fa-clock "></i>
+                                    <i class="fa fa-clock text-success"></i>
                                     <p>Mon-Sat (9am - 6pm)</p>
                                 </div>
                                 <div class="contact-info mb-5 mt-5">
-                                    <i class="fa-regular fa-envelope"></i>
+                                    <i class="fa-regular fa-envelope text-success"></i>
                                     <p><a class="text-dark text-decoration-none"
                                             href="mailto:info@wbboffice.com">info@wbboffice.com</a></p>
                                 </div>
                                 <div class="contact-info mb-5 mt-5">
-                                    <i class="fa fa-phone"></i>
-                                    <p><a href="" class="text-dark text-decoration-none">+918589880002</a></p>
+                                    <i class="fa fa-phone text-success"></i>
+                                    <p><a href="tel:+918589880002"
+                                            class="text-dark text-decoration-none">+918589880002</a></p>
                                 </div>
                             </div>
                         </div>
@@ -123,14 +192,14 @@
     <section class="banner-section banner-section-konchi">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-md-6 mb-5">
+                <div class="col-md-6 mb-5 js-scroll scrolled slide-left">
                     <h2 class="fw-bold text-success"> WBB Office Kochi</h2>
                     <h1 class="display-2 fw-bold pb-4 pt-2 text-light">Coworking Spaces
                         & Virtual Office in kochi</h1>
                     <p class="fs-2 text-light">Give your business wings.
                         Coworking Space starting from just INR 799 per month.</p>
                 </div>
-                <div class=" col-md-6 text-center">
+                <div class=" col-md-6 text-center js-scroll scrolled slide-right">
                     <div class="video">
                         <iframe src="https://www.youtube.com/embed/j0s47dex3m4?autoplay=1" allow='autoplay'
                             title="YouTube video player" frameborder="0" allow="autoplay clipboard-write;
@@ -145,7 +214,7 @@
     <!--================== Start desc Section ==================-->
     <section class="desc-section">
         <div class="container">
-            <div class="section-heading">
+            <div class="section-heading js-scroll fade-in">
                 <h2>Virtual & Coworking Space in kochi</h2>
                 <p>WBB Coworking space and virtual office is located in the heart of Kochi’s central business point
                     Panampilly Nagar. We have fully managed coworking spaces, virtual office and private office spaces
@@ -153,11 +222,11 @@
                     spaces with ready to use furniture for your business with other business support services.</p>
             </div>
             <div class="row align-items-center">
-                <div class="col-md-6">
+                <div class="col-md-6 js-scroll slide-left">
                     <img src="img/img2.jpg" class="img-fluid shadow rounded " alt="">
                 </div>
-                <div class="col-md-6">
-                    <h2 class="fw-bold text-success">Private offices</h2>
+                <div class="col-md-6 my-5 js-scroll slide-right">
+                    <h2 class="fw-bold display-6 text-success">Private offices</h2>
                     <p>WBB kochi is just few minute walk from the Malayala Manorama head office Kochi or Manorama
                         junction. All you have to do is simply sign up and start doing your business right away! If you
                         are looking for a affordable private office for rent in Kochi then WBB Kochi is the ideal one
@@ -183,7 +252,7 @@
     <!--================== Start Gallery Section ==================-->
     <section class="gallery-section">
         <div class="container">
-            <div class="section-heading">
+            <div class="section-heading js-scroll fade-in">
                 <h2>virtual office in Kochi</h2>
                 <p>Are you looking for an affordable and efficient way to run your business in Kochi? A virtual office
                     in Kochi could be the perfect solution for you. A virtual office provides many benefits to
@@ -192,7 +261,7 @@
                     Additionally, a virtual office allows businesses to operate from anywhere, anytime, making it easier
                     for them to stay connected with their clients.</p>
             </div>
-            <div class="gallery-inner">
+            <div class="gallery-inner js-scroll fade-in-bottom">
                 <div id="owl-gallery" class="owl-carousel owl-theme">
                     <div class="item">
                         <a href=""><img src="img/img1.jpg" alt=""></a>
@@ -222,7 +291,7 @@
     <!--================== Start Gallery Section ==================-->
     <section class="gallery-section border-top-0">
         <div class="container">
-            <div class="section-heading">
+            <div class="section-heading js-scroll fade-in">
                 <h2>virtual office in Kochi</h2>
                 <p>Are you looking for an affordable and efficient way to run your business in Kochi? A virtual office
                     in Kochi could be the perfect solution for you. A virtual office provides many benefits to
@@ -234,7 +303,7 @@
             <div class="row">
                 <div class="col-md-2"></div>
                 <div class="col-md-8">
-                    <div class="gallery-inner">
+                    <div class="gallery-inner js-scroll fade-in-bottom">
                         <div id="owl-gallery-single" class="owl-carousel owl-theme">
                             <div class="item">
                                 <img src="img/img3.jpg" alt="">
@@ -263,13 +332,13 @@
     <!--================== Start you-get section ==================-->
     <section class="you-get-section">
         <div class="container">
-            <div class="section-heading">
+            <div class="section-heading js-scroll fade-in">
                 <h2>WHAT YOU GET FROM WBB'S VIRTUAL OFFICE?</h2>
                 <h3>Virtual office in Kochi is an excellent solution for businesses looking to save on costs while
                     maintaining a professional image. Here are some benefits of having a virtual office:</h3>
             </div>
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-lg-4 col-md-6 js-scroll fade-in-bottom">
                     <div class="g-box">
                         <div class="icon">
                             <img src="img/Business-Registration-150x150.png" alt="">
@@ -278,7 +347,7 @@
                         <p>Get your business a prime location address that increase the credibility</p>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-lg-4 col-md-6 js-scroll fade-in-bottom">
                     <div class="g-box">
                         <div class="icon">
                             <img src="img/Live-Reception-Support-150x150.png" alt="">
@@ -288,7 +357,7 @@
                             Get dedicated reception support and have your calls, mails, courier handled.</p>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-lg-4 col-md-6 js-scroll fade-in-bottom">
                     <div class="g-box">
                         <div class="icon">
                             <img src="img/Current-Account-Opening-150x150.png" alt="">
@@ -298,7 +367,7 @@
                             Company registration in Bangalore is simple and easy with a virtual office</p>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-lg-4 col-md-6 js-scroll fade-in-bottom">
                     <div class="g-box">
                         <div class="icon">
                             <img src="img/Conference-Room-150x150.png" alt="">
@@ -308,7 +377,7 @@
                             Get access to our meeting rooms and give your meetings a corporate style</p>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-lg-4 col-md-6 js-scroll fade-in-bottom">
                     <div class="g-box">
                         <div class="icon">
                             <img src="img/GST-Registration-1-150x150.png" alt="">
@@ -318,7 +387,7 @@
                             we provide GST registration and bank account opening on demand.</p>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-lg-4 col-md-6 js-scroll fade-in-bottom">
                     <div class="g-box">
                         <div class="icon">
                             <img src="img/Office-Equipment-150x150.png" alt="">
@@ -336,13 +405,13 @@
     <!--================== End How to work section ==================-->
     <section class="how-work-section bg-white border-top-0">
         <div class="container">
-            <div class="section-heading">
+            <div class="section-heading js-scroll fade-in">
                 <h2>How Does a Virtual Office Work?</h2>
                 <h3>A virtual office in Kochi is a concept that enables businesses to work from a remote location
                     without actually being present in a physical office space</h3>
             </div>
             <div class="row align-items-center">
-                <div class="col-md-6 mb-4">
+                <div class="col-md-6 mb-4 js-scroll slide-left">
                     A virtual office in Kochi is a concept that enables businesses to work from a remote location
                     without actually being present in a physical office space. This arrangement is ideal for startups,
                     entrepreneurs, and freelancers who wish to establish a professional business address without
@@ -353,7 +422,7 @@
                     entrepreneurs can create an impression of a larger business entity and boost their brand image
                     without breaking the bank.
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 js-scroll slide-right">
                     <img src="img/img3.jpg" class="img-thumbnail" alt="">
                 </div>
             </div>
@@ -364,7 +433,7 @@
     <!--================== Start Flexible work section ==================-->
     <section class="flexible-work-section">
         <div class="container">
-            <div class="section-heading">
+            <div class="section-heading js-scroll fade-in">
                 <h2 class="text-light">Flexible coworking space in kochi</h2>
                 <p class="text-light">WBB has dedicated coworking desks which gives you access to our facilities and
                     services at affordable
@@ -374,8 +443,8 @@
                     consulting activity as well as sales and marketing people. </p>
             </div>
 
-            <div class="row align-items-center ">
-                <div class="col-md-6">
+            <div class="row ">
+                <div class="col-md-6 js-scroll slide-left">
                     <ul class="list-box">
                         <h2 class="fw-bold display-5 text-light">TRADITIONAL OFFICES</h2>
                         <li class="d-flex align-items-center gap-3 text-light "><i class="fa fa-check display-6"></i>
@@ -401,7 +470,7 @@
                                 class="fa fa-check display-6"></i>Receptionist and Security charges</li>
                     </ul>
                 </div>
-                <div class=" col-md-6">
+                <div class=" col-md-6 js-scroll slide-right">
                     <ul class="list-box">
                         <h2 class="fw-bold display-5 text-light">WBB OFICE KOCHI</h2>
                         <li class="d-flex align-items-center gap-3 text-light "><i
@@ -429,7 +498,7 @@
     <section class="faq-section">
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-6 js-scroll slide-left">
                     <img src="img/faq-image.svg" class="img-fluid w-25" alt="">
                     <h2 class="text-success fw-bold display-3 mt-5 mb-4">Usually asking
                         Answer to question</h2>
@@ -437,7 +506,7 @@
                         list before asking us questions. Then you will not have to wait for our answer and you will save
                         valuable time.</p>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 js-scroll slide-right">
                     <div class="accordion accordion-flush" id="accordionFlushExample">
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="flush-headingOne">
@@ -568,13 +637,13 @@
     <!--================== Start FTP section ==================-->
     <section class="ftp-section">
         <div class="container">
-            <div class="section-heading">
+            <div class="section-heading js-scroll fade-in">
                 <h2>Get In Touch</h2>
                 <h3>f you’d like a free consultation, please start by completing the form</h3>
             </div>
             <div class="row">
                 <div class="col-md-3"></div>
-                <div class="col-md-6">
+                <div class="col-md-6 js-scroll fade-in-bottom">
                     <div class="ftp-frms">
                         <form action="" class="">
 
@@ -608,9 +677,10 @@
         <footer>
             <div class="container">
                 <div class="row justify-content-between">
-                    <div class="col-lg-4 col-md-12">
+                    <div class="col-lg-4 col-md-12 mb-lg-0">
                         <a href="index.html"><img src="img/logo-white.png" alt=""></a>
-                        <p class="text-light my-5">Any business need a registration and space to work, here where WBB
+                        <p class="text-light my-5">Any business need a registration and space to work, here where
+                            WBB
                             enters
                             as a solution. People
                             can start their business with our innovative service with just thousands of rupees instead
@@ -622,27 +692,28 @@
                             <li><a href=""><i class="fa-brands fa-linkedin-in"></i></a></li>
                         </ul>
                     </div>
-                    <div class="col-lg-2 col-md-12">
-                        <h2 class="fw-bold text-light mb-5 display-6">Useful Links</h2>
+                    <div class="col-lg-2 col-md-12 mt-lg-0 mt-md-5">
+                        <h2 class="fw-bold text-light mb-4 display-6">Useful Links</h2>
                         <ul class="footer-link">
                             <li><a href="index.html">Home</a></li>
                             <li><a href="about.html">About</a></li>
-                            <li><a href="">Services</a></li>
+                            <li><a href="services.html">Services</a></li>
+                            <li><a href="prices.html">Prices</a></li>
                             <li><a href="virtual-office-in-kochi.html">Virtual Office</a></li>
-                            <li><a href="">Book Your Space</a></li>
-                            <li><a href="">Contact</a></li>
+                            <li><a href="coworking-space.html">Co Working Space</a></li>
+                            <li><a href="contact.html">Contact</a></li>
                         </ul>
                     </div>
-                    <div class="col-lg-2 col-md-12">
-                        <h2 class="fw-bold text-light mb-5 display-6">Virtual office</h2>
+                    <div class="col-lg-2 col-md-12 mt-lg-0 mt-md-5">
+                        <h2 class="fw-bold text-light mb-4 display-6">Virtual office</h2>
                         <ul class="footer-link">
                             <li><a href="virtual-office-in-kochi.html">Kochi</a></li>
-                            <li><a href="">Chennai</a></li>
-                            <li><a href="">Chennai</a></li>
-                            <li><a href="">DelhiLike</a></li>
+                            <li><a href="virtual-office-in-kochi.html">Chennai</a></li>
+                            <li><a href="virtual-office-in-kochi.html">Chennai</a></li>
+                            <li><a href="virtual-office-in-kochi.html">DelhiLike</a></li>
                         </ul>
                     </div>
-                    <div class="col-lg-4 col-md-12">
+                    <div class="col-lg-4 col-md-12 mt-lg-0 mt-md-5">
                         <div class="map">
                             <iframe class=""
                                 src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3501.6751119427167!2d77.2810172755011!3d28.639497775660903!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjjCsDM4JzIyLjIiTiA3N8KwMTcnMDAuOSJF!5e0!3m2!1sen!2sjp!4v1694781175529!5m2!1sen!2sjp"
@@ -658,6 +729,9 @@
         </div>
     </div>
     <!--================== End Footer section ==================-->
+    <div class="tap-toTop ">
+        <i class="fa-solid fa-arrow-up text-success "></i>
+    </div>
 
 
     <script src="js/jquery-3.4.1.min.js"></script>
