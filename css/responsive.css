@@ -30,6 +30,10 @@
   .gap-md-2 {
     gap: 2rem;
   }
+  .icon-box {
+    width: 7rem;
+    height: 7rem;
+  }
 }
 
 @media (max-width: 550px) {
@@ -39,6 +43,9 @@
   .list-box {
     padding: 2rem;
     margin: 1rem;
+  }
+  .mobile-logo {
+    width: 11rem;
   }
 }
 @media (max-width: 350px) {

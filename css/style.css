@@ -321,10 +321,11 @@ header {
 }
 
 .navbar {
-  background: var(--white-gray) !important;
+  background: #e8eaff8d !important;
   color: var(--white-color);
   border-bottom: 0.1rem solid var(--border-color);
-  backdrop-filter: blur(2rem);
+  -webkit-backdrop-filter: blur(3rem);
+  backdrop-filter: blur(3rem);
 }
 .navbar-nav {
   width: 100%;
@@ -467,9 +468,13 @@ header {
   font-size: 1.2rem;
 }
 .tranding-client a img {
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
   transition: 0.3s;
 }
 .tranding-client a:hover img {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
   transform: scale(1.1);
 }
 
@@ -905,6 +910,8 @@ ul {
 
 /* vitual office karachi page */
 .banner-section {
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)),
+    url(../img/cow.jpg);
   background: -webkit-gradient(
       linear,
       left top,
@@ -912,8 +919,6 @@ ul {
       from(rgba(0, 0, 0, 0.4)),
       to(rgba(0, 0, 0, 0.3))
     ),
-    url(../img/cow.jpg);
-  background: -o-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)),
     url(../img/cow.jpg);
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)),
     url(../img/cow.jpg);
@@ -924,6 +929,8 @@ ul {
   border-bottom: 0.1rem solid var(--border-color);
 }
 .banner-section-konchi {
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)),
+    url(../img/img3.jpg);
   background: -webkit-gradient(
       linear,
       left top,
@@ -931,8 +938,6 @@ ul {
       from(rgba(0, 0, 0, 0.4)),
       to(rgba(0, 0, 0, 0.3))
     ),
-    url(../img/img3.jpg);
-  background: -o-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)),
     url(../img/img3.jpg);
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)),
     url(../img/img3.jpg);
@@ -943,6 +948,8 @@ ul {
   border-bottom: 0.1rem solid var(--border-color);
 }
 .banner-section-contact {
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)),
+    url(../img/cow.jpg);
   background: -webkit-gradient(
       linear,
       left top,
@@ -950,8 +957,6 @@ ul {
       from(rgba(0, 0, 0, 0.4)),
       to(rgba(0, 0, 0, 0.3))
     ),
-    url(../img/cow.jpg);
-  background: -o-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)),
     url(../img/cow.jpg);
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)),
     url(../img/cow.jpg);
@@ -962,6 +967,8 @@ ul {
   border-bottom: 0.1rem solid var(--border-color);
 }
 .banner-section-services {
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)),
+    url(../img/virtual-office-3.jpeg);
   background: -webkit-gradient(
       linear,
       left top,
@@ -969,8 +976,6 @@ ul {
       from(rgba(0, 0, 0, 0.4)),
       to(rgba(0, 0, 0, 0.3))
     ),
-    url(../img/virtual-office-3.jpeg);
-  background: -o-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)),
     url(../img/virtual-office-3.jpeg);
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)),
     url(../img/virtual-office-3.jpeg);
@@ -1140,6 +1145,8 @@ ul {
   overflow: hidden;
 }
 .flexible-work-section {
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)),
+    url(../img/virtual-office-4.jpeg);
   background: -webkit-gradient(
       linear,
       left top,
@@ -1147,8 +1154,6 @@ ul {
       from(rgba(0, 0, 0, 0.4)),
       to(rgba(0, 0, 0, 0.3))
     ),
-    url(../img/virtual-office-4.jpeg);
-  background: -o-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)),
     url(../img/virtual-office-4.jpeg);
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)),
     url(../img/virtual-office-4.jpeg);
@@ -1159,6 +1164,7 @@ ul {
 .list-box {
   min-height: 50rem;
   background: #19875478;
+  -webkit-backdrop-filter: blur(3rem) !important;
   backdrop-filter: blur(3rem) !important;
   padding: 4rem;
   border: 0.1rem solid var(--border-color);
