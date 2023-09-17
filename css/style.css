@@ -263,10 +263,11 @@ backdrop.fade {
 }
 /* header */
 header {
-  background-color: var(--white-color);
+  background-color: #ffffff5d;
   position: sticky;
   top: -6.8rem;
   z-index: 999;
+  backdrop-filter: blur(4rem);
 }
 
 .header-top {
@@ -321,7 +322,7 @@ header {
 }
 
 .navbar {
-  background: #e8eaff8d !important;
+  background: #e8eaff6c !important;
   color: var(--white-color);
   border-bottom: 0.1rem solid var(--border-color);
   -webkit-backdrop-filter: blur(3rem);
