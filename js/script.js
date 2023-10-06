@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  var owl = $("#owl-demo");
+  let owl = $("#owl-demo");
 
   owl.owlCarousel({
     items: 3,
@@ -9,7 +9,7 @@ $(document).ready(function () {
     itemsMobile: false,
   });
 
-  var owl_gallery = $("#owl-gallery");
+  let owl_gallery = $("#owl-gallery");
 
   owl_gallery.owlCarousel({
     items: 3,
@@ -24,51 +24,14 @@ $(document).ready(function () {
   $(".prev").click(function () {
     owl_gallery.trigger("owl.prev");
   });
-
-  var owl_gallery_single = $("#owl-gallery-single");
-
-  owl_gallery_single.owlCarousel({
-    items: 1,
-    itemsDesktop: [1000, 1],
-    itemsDesktopSmall: [900, 1],
-    itemsTablet: [600, 1],
-    itemsMobile: Float32Array,
-  });
-
-  $(".next").click(function () {
-    owl_gallery_single.trigger("owl.next");
-  });
-  $(".prev").click(function () {
-    owl_gallery_single.trigger("owl.prev");
-  });
-
-  // owl-demo-single-sm
-  var owl_single_sm = $("#owl-demo-single-sm");
-
-  owl_single_sm.owlCarousel({
-    items: 1,
-  });
 });
 
-// nav hover function dropdown-menu
-let dropDownLink = document.querySelectorAll("#dropDown-link");
-let dropdownMenu = document.querySelectorAll(".dropdown-menu");
-
-dropDownLink.forEach((element) => {
-  element.addEventListener("mouseenter", function () {
-    element.querySelector(".dropdown-menu").classList.add("show");
-  });
-  element.addEventListener("mouseleave", function () {
-    element.querySelector(".dropdown-menu").classList.remove("show");
-  });
+//onload popup show
+$(window).on("load", function () {
+  // setTimeout(() => {
+  //   $(".modal").modal("show");
+  // }, 3000);
 });
-
-//omload popup show
-// $(window).on("load", function () {
-//   setTimeout(() => {
-//     $(".modal").modal("show");
-//   }, 3000);
-// });
 
 // onscroll animation
 const scrollElements = document.querySelectorAll(".js-scroll");
@@ -110,12 +73,12 @@ const handleScrollAnimation = () => {
 
 window.addEventListener("scroll", () => {
   handleScrollAnimation();
+  showTapToTop();
 });
 
 //tap to top btn
 const tap_top_btn = document.querySelector(".tap-toTop");
-
-window.onscroll = function () {
+function showTapToTop() {
   let posHight = document.documentElement.scrollHeight;
   let pos = window.scrollY;
 
@@ -124,22 +87,8 @@ window.onscroll = function () {
   } else {
     tap_top_btn.classList.remove("active");
   }
-};
+}
 
 tap_top_btn.onclick = function () {
   document.documentElement.scrollTop = 0;
-};
-
-//
-let ab = document.querySelector(".floating-select");
-ab.onchange = () => {
-  if (ab.value == "kochi") {
-    window.location.href = "/virtual-office-in-kochi.html";
-  } else if (ab.value == "delhi") {
-    window.location.href = "/virtual-office-in-kochi.html";
-  } else if (ab.value == "bangalore") {
-    window.location.href = "/virtual-office-in-kochi.html";
-  } else if (ab.value == "chennai") {
-    window.location.href = "/virtual-office-in-kochi.html";
-  }
 };
