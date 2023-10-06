@@ -352,9 +352,6 @@ header {
   color: var(--green-color) !important;
 }
 
-.hovre-white.hovre-whit-btn:hover {
-  color: #fff !important;
-}
 .dropdown-menu {
   background: var(--white-gray);
   -webkit-transition: 0.2s;
@@ -730,7 +727,313 @@ ul {
   background: transparent;
   color: #198754;
   border-bottom: 2px solid #198754;
+  font-weight: 700;
+}
+nav nav-pills {
+  border-bottom: 2px solid var(--green-color);
 }
 .nav-pills .nav-link {
   color: var(--black-color);
+  font-weight: 600;
+}
+/* contact info section */
+.g-box {
+  background: var(--white-gray);
+  padding: 4rem 2.5rem;
+  border-radius: 1rem;
+  border: 0.1rem solid var(--border-color);
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  margin: 0.8rem 0;
+  min-height: 20rem;
+}
+.g-box .icon {
+  background: #19875425;
+  width: 9rem;
+  height: 9rem;
+  padding: 1.8rem;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.g-box .icon img {
+  width: 100%;
+}
+.g-box h2 {
+  text-decoration: none;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 1rem 0;
+  display: block;
+  color: var(--black-color);
+  padding-top: 0.8rem;
+}
+.map iframe {
+  width: 100%;
+  height: 30rem;
+}
+
+/* pricing page  style*/
+.pricing-table-section {
+  background: var(--white-gray);
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+}
+.table {
+  background: #fff;
+  margin: 1.5rem 0;
+  padding: 3rem 3rem;
+  position: relative;
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+.table .price-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.table .price-area {
+  height: 13rem;
+  width: 13rem;
+  border-radius: 50%;
+  padding: 0.2rem;
+}
+.price-area .inner-area {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  border: 0.3rem solid #fff;
+  text-align: center;
+  color: #fff;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.price-area .inner-area .text {
+  font-size: 2rem;
+  font-weight: 400;
+  position: absolute;
+  top: 1.5rem;
+  left: 1.7rem;
+}
+.price-area .inner-area .text-2 {
+  font-size: 1.7rem;
+  font-weight: 500;
+  position: absolute;
+  top: 7.8rem;
+  left: 60%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+.price-area .inner-area .price {
+  font-size: 4rem;
+  font-weight: 600;
+}
+.table .package-name {
+  width: 100%;
+  height: 0.2rem;
+  margin: 3.5rem 0;
+  position: relative;
+}
+.table .package-name::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 2.5rem;
+  font-weight: 500;
+  background: #fff;
+  padding: 0 1.5rem;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.table .features li {
+  margin-bottom: 0.5rem;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.features li .list-name {
+  font-size: 1.7rem;
+  font-weight: 400;
+}
+.features li .icon {
+  font-size: 1.5rem;
+}
+.features li .icon.check {
+  color: #2db94d;
+}
+.features li .icon.cross {
+  color: #cd3241;
+}
+.table .btn {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 3.5rem;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.table .btn button {
+  width: 80%;
+  height: 5rem;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 500;
+  border: none;
+  outline: none;
+  border-radius: 2.5rem;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.table .btn button:hover {
+  border-radius: 0.5rem;
+}
+.basic .features li::-moz-selection {
+  background: #ffd861;
+}
+.basic .features li::selection {
+  background: #ffd861;
+}
+.basic ::-moz-selection {
+  background: #ffd861;
+}
+.basic ::selection,
+.basic .price-area,
+.basic .inner-area {
+  background: #ffd861;
+}
+.basic .btn button {
+  border: 0.2rem solid #ffd861;
+  background: #fff;
+  color: #ffd861;
+}
+.basic .btn button:hover {
+  background: #ffd861;
+  color: #fff;
+}
+.premium ::-moz-selection {
+  background: #a26bfa;
+}
+.premium ::selection,
+.premium .price-area,
+.premium .inner-area,
+.premium .btn button {
+  background: #a26bfa;
+}
+.premium .btn button:hover {
+  background: #833af8;
+}
+.ultimate ::-moz-selection {
+  background: #43ef8b;
+}
+.ultimate ::selection,
+.ultimate .price-area,
+.ultimate .inner-area {
+  background: #43ef8b;
+}
+.ultimate .btn button {
+  border: 0.2rem solid #43ef8b;
+  color: #43ef8b;
+  background: #fff;
+}
+.ultimate .btn button:hover {
+  background: #43ef8b;
+  color: #fff;
+}
+.basic .package-name {
+  background: #ffecb3;
+}
+.premium .package-name {
+  background: #d0b3ff;
+}
+.ultimate .package-name {
+  background: #baf8d4;
+}
+.basic .package-name::before {
+  content: "STANDARD";
+  font-size: 2rem;
+}
+.premium .package-name::before {
+  content: "PREMIUM";
+  font-size: 2rem;
+}
+.ultimate .package-name::before {
+  content: "ULTIMATE";
+  font-size: 2rem;
+}
+
+.table .ribbon {
+  width: 15rem;
+  height: 15rem;
+  position: absolute;
+  top: -1rem;
+  left: -1rem;
+  overflow: hidden;
+}
+.table .ribbon::before,
+.table .ribbon::after {
+  position: absolute;
+  content: "";
+  z-index: -1;
+  display: block;
+  border: 0.7rem solid #4606ac;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  z-index: 99;
+}
+.table .ribbon::before {
+  top: 0rem;
+  right: 1.5rem;
+}
+.table .ribbon::after {
+  bottom: 1.5rem;
+  left: 0rem;
+}
+.table .ribbon span {
+  position: absolute;
+  top: 3rem;
+  right: 0;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  width: 20rem;
+  background: #a26bfa;
+  padding: 1rem 0;
+  color: #fff;
+  text-align: center;
+  font-size: 1.7rem;
+  text-transform: uppercase;
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.12);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.12);
+}
+.mlight-btn {
+  color: #fff !important;
 }
