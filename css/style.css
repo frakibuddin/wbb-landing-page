@@ -84,6 +84,7 @@ h5 {
   text-transform: uppercase;
 }
 .section-heading h3 {
+  margin: 0;
   font-size: 2rem;
   color: var(--black-light);
   font-weight: 600;
@@ -1070,7 +1071,7 @@ nav nav-pills {
   border-radius: 0 3rem 3rem 0;
 }
 .frm-footer {
-  background: #0c1222;
-  padding: 2rem;
+  background: #198754;
+  padding: 5rem 2rem;
   border-radius: 4rem;
 }
