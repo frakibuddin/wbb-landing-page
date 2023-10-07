@@ -34,9 +34,15 @@
     width: 7rem;
     height: 7rem;
   }
+  .col-md-reverse {
+    flex-direction: column-reverse;
+  }
 }
 
 @media (max-width: 550px) {
+  html {
+    font-size: 59%;
+  }
   .carousel-inner .carousel-item {
     height: 47rem;
   }
@@ -47,6 +53,7 @@
   .mobile-logo {
     width: 12rem;
   }
-}
-@media (max-width: 350px) {
+  .nav-pills .nav-link {
+    padding: 1rem 1.5rem;
+  }
 }

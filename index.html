@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/owl.carousel.css">
     <link rel="stylesheet" href="css/owl.theme.css">
+    <link rel="stylesheet" href="css/uikit.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
     <title>Virtual Address in India | Business Registration Address</title>
@@ -136,13 +137,13 @@
                                 <a class="nav-link" href="#testimonial">Testimonial</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#location">Locations</a>
+                                <a class="nav-link" href="#map">Locations</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#contact">Contact</a>
-                            </li>
+
                             <li class=" text-light mlight-btn">
-                                <a class="fw-bold  btn btn-success rounded-pill" href="#">Book Your Space</a>
+                                <a class="fw-bold btn btn-success rounded-pill px-5 text-decoration-none"
+                                    href="#footer">Get a
+                                    Quote</a>
                             </li>
 
                         </ul>
@@ -174,7 +175,7 @@
     <!--================== Start Hero section ==================-->
     <section class="hero-section" id="contact">
         <div class="container">
-            <div class="row align-items-center">
+            <div class="row align-items-center col-md-reverse">
                 <div class="col-md-6">
                     <div class="hero-heading ">
                         <h1>Find the Best Virtual
@@ -193,30 +194,42 @@
                             </div>
                             <p class="text-light">Kochi</p>
                         </a>
-                        <a href="" class="t-client-inner">
+                        <a href="#vitual-office" class="t-client-inner">
                             <div class="t-client-logo">
-                                <img src="img/icon/delhi.webp" alt="">
+                                <img src="img/icon/Delhi.png" alt="">
                             </div>
                             <p class="text-light">New Delhi</p>
                         </a>
-                        <a href="" class="t-client-inner">
+                        <a href="#vitual-office" class="t-client-inner">
                             <div class="t-client-logo">
-                                <img src="img/icon/delhi.webp" alt="">
+                                <img src="img/icon/bangalore.png" alt="">
                             </div>
-                            <p class="text-light">New Delhi</p>
+                            <p class="text-light">Bangalore</p>
+                        </a>
+                        <a href="#vitual-office" class="t-client-inner">
+                            <div class="t-client-logo">
+                                <img src="img/icon/Chennai.png" alt="">
+                            </div>
+                            <p class="text-light">Chennai</p>
                         </a>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 mb-5">
                     <form action="" class="frm-common">
                         <input type="text" class="form-control rounded-pill" placeholder="Full Name">
                         <input type="text" class="form-control rounded-pill mt-4" placeholder="Email">
-                        <input type="text" class="form-control rounded-pill mt-4" placeholder="Phone Number">
-                        <textarea class="form-control rounded-textarea mt-4" rows="7"
+                        <div class="input-group mt-4 rounded-pill " style="overflow: hidden;">
+                            <input type="text" class="form-control" placeholder="Contact Number"
+                                aria-label="Recipient's username" aria-describedby="basic-addon2">
+
+                            <button class="btn btn-primary btn-lg ml-4">Send OTP</button>
+                        </div>
+                        <input type="text" class="form-control rounded-pill mt-4" placeholder="Enter OTP">
+                        <textarea class="form-control rounded-textarea mt-4" rows="6"
                             placeholder="Requirments"></textarea>
                         <div class="text-center">
                             <input type="button" value="Send Message"
-                                class="btn btn-info mt-3 m-auto btn-lg rounded-pill px-5 py-4">
+                                class="btn btn-info mt-3 m-auto btn-lg rounded-pill px-5 py-4 fw-bold ">
                         </div>
                     </form>
                 </div>
@@ -290,6 +303,9 @@
                             helpful team today and get started!</p>
                     </div>
                 </div>
+            </div>
+            <div class="text-center">
+                <a href="#" class="btn btn-success btn-lg rounded-pill my-btn">Let's Talk</a>
             </div>
         </div>
     </section>
@@ -397,11 +413,11 @@
     <section class="gallery-section" id="vitual-office">
         <div class="container">
             <div class="section-heading js-scroll fade-in">
-                <h2>OUR CUSTOMER REVIEWS</h2>
-                <h3>Let’s see what our customer say’s about us</h3>
+                <h2>LET'S SEE OUR OFFICES</h2>
+                <h3>Let's see what our customer say's about us</h3>
             </div>
             <!-- Gallery -->
-            <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
+            <ul class="nav nav-pills mb-3 justify-content-center mb-5" id="pills-tab" role="tablist">
                 <li class="nav-item" role="presentation">
                     <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
                         data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
@@ -423,31 +439,32 @@
                         aria-selected="false">Bangalore</button>
                 </li>
             </ul>
-            <div class="tab-content" id="pills-tabContent">
+            <div class="tab-content" id="pills-tabContent" uk-lightbox>
                 <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
 
                     <div class="row">
                         <div class="col-lg-4 col-md-6 col-md-12 mb-4 mb-lg-0">
-
-                            <img src="img/img2.jpg" class="w-100 shadow-1-strong rounded mb-4"
-                                alt="Wintry Mountain Landscape" />
-                            <img src="img/img8.jpg" class="w-100 shadow-1-strong rounded mb-4"
-                                alt="Boat on Calm Water" />
+                            <a href="img/img2.jpg"><img src="img/img2.jpg" class="w-100 shadow-1-strong rounded mb-4"
+                                    alt="Wintry Mountain Landscape" /></a>
+                            <a href="img/img8.jpg"><img src="img/img8.jpg" class="w-100 shadow-1-strong rounded mb-4"
+                                    alt="Boat on Calm Water" /></a>
                         </div>
 
                         <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
-                            <img src="img/img5.jpg" class="w-100 shadow-1-strong rounded mb-4"
-                                alt="Mountains in the Clouds" />
-                            <img src="img/img1.jpg" class="w-100 shadow-1-strong rounded mb-4"
-                                alt="Wintry Mountain Landscape" />
+
+                            <a href="img/img5.jpg"><img src="img/img5.jpg" class="w-100 shadow-1-strong rounded mb-4"
+                                    alt="Mountains in the Clouds" /></a>
+                            <a href="img/img1.jpg"><img src="img/img1.jpg" class="w-100 shadow-1-strong rounded mb-4"
+                                    alt="Wintry Mountain Landscape" /></a>
 
                         </div>
 
                         <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
-                            <img src="img/img4.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="Waves at Sea" />
+                            <a href="img/img4.jpg"><img src="img/img4.jpg" class="w-100 shadow-1-strong rounded mb-4"
+                                    alt="Waves at Sea" /></a>
 
-                            <img src="img/img6.jpg" class="w-100 shadow-1-strong rounded mb-4"
-                                alt="Yosemite National Park" />
+                            <a href="img/img6.jpg"><img src="img/img6.jpg" class="w-100 shadow-1-strong rounded mb-4"
+                                    alt="Yosemite National Park" /></a>
                         </div>
                     </div>
                 </div>
@@ -455,85 +472,89 @@
 
                     <div class="row">
                         <div class="col-lg-4 col-md-6 col-md-12 mb-4 mb-lg-0">
-
-                            <img src="img/img2.jpg" class="w-100 shadow-1-strong rounded mb-4"
-                                alt="Wintry Mountain Landscape" />
-                            <img src="img/img8.jpg" class="w-100 shadow-1-strong rounded mb-4"
-                                alt="Boat on Calm Water" />
+                            <a href="img/img2.jpg"><img src="img/img2.jpg" class="w-100 shadow-1-strong rounded mb-4"
+                                    alt="Wintry Mountain Landscape" /></a>
+                            <a href="img/img8.jpg"><img src="img/img8.jpg" class="w-100 shadow-1-strong rounded mb-4"
+                                    alt="Boat on Calm Water" /></a>
                         </div>
 
                         <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
-                            <img src="img/img5.jpg" class="w-100 shadow-1-strong rounded mb-4"
-                                alt="Mountains in the Clouds" />
-                            <img src="img/img1.jpg" class="w-100 shadow-1-strong rounded mb-4"
-                                alt="Wintry Mountain Landscape" />
+
+                            <a href="img/img5.jpg"><img src="img/img5.jpg" class="w-100 shadow-1-strong rounded mb-4"
+                                    alt="Mountains in the Clouds" /></a>
+                            <a href="img/img1.jpg"><img src="img/img1.jpg" class="w-100 shadow-1-strong rounded mb-4"
+                                    alt="Wintry Mountain Landscape" /></a>
 
                         </div>
 
                         <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
-                            <img src="img/img4.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="Waves at Sea" />
+                            <a href="img/img4.jpg"><img src="img/img4.jpg" class="w-100 shadow-1-strong rounded mb-4"
+                                    alt="Waves at Sea" /></a>
 
-                            <img src="img/img6.jpg" class="w-100 shadow-1-strong rounded mb-4"
-                                alt="Yosemite National Park" />
+                            <a href="img/img6.jpg"><img src="img/img6.jpg" class="w-100 shadow-1-strong rounded mb-4"
+                                    alt="Yosemite National Park" /></a>
                         </div>
                     </div>
                 </div>
                 <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
-
                     <div class="row">
                         <div class="col-lg-4 col-md-6 col-md-12 mb-4 mb-lg-0">
-
-                            <img src="img/img2.jpg" class="w-100 shadow-1-strong rounded mb-4"
-                                alt="Wintry Mountain Landscape" />
-                            <img src="img/img8.jpg" class="w-100 shadow-1-strong rounded mb-4"
-                                alt="Boat on Calm Water" />
+                            <a href="img/img2.jpg"><img src="img/img2.jpg" class="w-100 shadow-1-strong rounded mb-4"
+                                    alt="Wintry Mountain Landscape" /></a>
+                            <a href="img/img8.jpg"><img src="img/img8.jpg" class="w-100 shadow-1-strong rounded mb-4"
+                                    alt="Boat on Calm Water" /></a>
                         </div>
 
                         <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
-                            <img src="img/img5.jpg" class="w-100 shadow-1-strong rounded mb-4"
-                                alt="Mountains in the Clouds" />
-                            <img src="img/img1.jpg" class="w-100 shadow-1-strong rounded mb-4"
-                                alt="Wintry Mountain Landscape" />
+
+                            <a href="img/img5.jpg"><img src="img/img5.jpg" class="w-100 shadow-1-strong rounded mb-4"
+                                    alt="Mountains in the Clouds" /></a>
+                            <a href="img/img1.jpg"><img src="img/img1.jpg" class="w-100 shadow-1-strong rounded mb-4"
+                                    alt="Wintry Mountain Landscape" /></a>
 
                         </div>
 
                         <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
-                            <img src="img/img4.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="Waves at Sea" />
+                            <a href="img/img4.jpg"><img src="img/img4.jpg" class="w-100 shadow-1-strong rounded mb-4"
+                                    alt="Waves at Sea" /></a>
 
-                            <img src="img/img6.jpg" class="w-100 shadow-1-strong rounded mb-4"
-                                alt="Yosemite National Park" />
+                            <a href="img/img6.jpg"><img src="img/img6.jpg" class="w-100 shadow-1-strong rounded mb-4"
+                                    alt="Yosemite National Park" /></a>
                         </div>
                     </div>
+
                 </div>
                 <div class="tab-pane fade" id="pills-bangloor" role="tabpanel" aria-labelledby="pills-contact-tab">
-
                     <div class="row">
                         <div class="col-lg-4 col-md-6 col-md-12 mb-4 mb-lg-0">
-
-                            <img src="img/img2.jpg" class="w-100 shadow-1-strong rounded mb-4"
-                                alt="Wintry Mountain Landscape" />
-                            <img src="img/img8.jpg" class="w-100 shadow-1-strong rounded mb-4"
-                                alt="Boat on Calm Water" />
+                            <a href="img/img2.jpg"><img src="img/img2.jpg" class="w-100 shadow-1-strong rounded mb-4"
+                                    alt="Wintry Mountain Landscape" /></a>
+                            <a href="img/img8.jpg"><img src="img/img8.jpg" class="w-100 shadow-1-strong rounded mb-4"
+                                    alt="Boat on Calm Water" /></a>
                         </div>
 
                         <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
-                            <img src="img/img5.jpg" class="w-100 shadow-1-strong rounded mb-4"
-                                alt="Mountains in the Clouds" />
-                            <img src="img/img1.jpg" class="w-100 shadow-1-strong rounded mb-4"
-                                alt="Wintry Mountain Landscape" />
+
+                            <a href="img/img5.jpg"><img src="img/img5.jpg" class="w-100 shadow-1-strong rounded mb-4"
+                                    alt="Mountains in the Clouds" /></a>
+                            <a href="img/img1.jpg"><img src="img/img1.jpg" class="w-100 shadow-1-strong rounded mb-4"
+                                    alt="Wintry Mountain Landscape" /></a>
 
                         </div>
 
                         <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
-                            <img src="img/img4.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="Waves at Sea" />
+                            <a href="img/img4.jpg"><img src="img/img4.jpg" class="w-100 shadow-1-strong rounded mb-4"
+                                    alt="Waves at Sea" /></a>
 
-                            <img src="img/img6.jpg" class="w-100 shadow-1-strong rounded mb-4"
-                                alt="Yosemite National Park" />
+                            <a href="img/img6.jpg"><img src="img/img6.jpg" class="w-100 shadow-1-strong rounded mb-4"
+                                    alt="Yosemite National Park" /></a>
                         </div>
                     </div>
                 </div>
             </div>
-
+            <div class="text-center">
+                <a href="#" class="btn btn-success btn-lg rounded-pill my-btn">Let's Talk</a>
+            </div>
             <!-- Gallery -->
         </div>
     </section>
@@ -547,14 +568,14 @@
                 <h3>We have the aim to help business minded people give wings for their Ideas</h3>
             </div>
             <div class="row">
-                <div class="col-lg-4 col-md-6 js-scroll fade-in-bottom">
+                <div class="col-lg-3 col-md-6 js-scroll fade-in-bottom">
                     <div class="table basic">
                         <div class="price-section">
                             <div class="price-area">
                                 <div class="inner-area">
                                     <span class="text">Rs</span>
-                                    <span class="price">799</span>
-                                    <span class="text-2">Monthly</span>
+                                    <span class="price">9700</span>
+                                    <span class="text-2">/Year</span>
                                 </div>
                             </div>
                         </div>
@@ -582,44 +603,48 @@
                             </li>
                             <li>
                                 <span class="list-name">Receptionist basic Services</span>
-                                <span class="icon cross"><i class="fas fa-times"></i></span>
+                                <span class="icon check"><i class="fas fa-check"></i></span>
                             </li>
                             <li>
                                 <span class="list-name">Bangalore Landline Number</span>
-                                <span class="icon cross"><i class="fas fa-times"></i></span>
+                                <span class="icon check"><i class="fas fa-check"></i></span>
                             </li>
                             <li>
                                 <span class="list-name">Live Receptionist</span>
-                                <span class="icon cross"><i class="fas fa-times"></i></span>
+                                <span class="icon check"><i class="fas fa-check"></i></span>
                             </li>
                             <li>
                                 <span class="list-name">Private Limited /LLP Registration</span>
-                                <span class="icon cross"><i class="fas fa-times"></i></span>
+                                <span class="icon check"><i class="fas fa-check"></i></span>
                             </li>
                             <li>
                                 <span class="list-name">CA Fees Included</span>
-                                <span class="icon cross"><i class="fas fa-times"></i></span>
+                                <span class="icon check"><i class="fas fa-check"></i></span>
                             </li>
                         </ul>
-                        <div class="btn"><button>Pay Now</button></div>
+                        <a href="https://wbboffice.com/order.php" style='text-decoration:none;'>
+                            <div class="btn"><button>Pay Now</button></div>
+                        </a>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 js-scroll fade-in-bottom">
+
+
+                <div class="col-lg-3 col-md-6 js-scroll fade-in-bottom">
                     <div class="table premium">
-                        <div class="ribbon"><span>Recommend</span></div>
+                        <!-- <div class="ribbon"><span>Recommend</span></div>-->
                         <div class="price-section">
                             <div class="price-area">
                                 <div class="inner-area">
                                     <span class="text">Rs</span>
-                                    <span class="price">1600</span>
-                                    <span class="text-2">Monthly</span>
+                                    <span class="price">10500</span>
+                                    <span class="text-2">/Yearly</span>
                                 </div>
                             </div>
                         </div>
                         <div class="package-name"></div>
                         <ul class="features">
                             <li>
-                                <span class="list-name">Kochi- Panampilly nagar Address</span>
+                                <span class="list-name">Delhi - Lakshmi Nagar </span>
                                 <span class="icon check"><i class="fas fa-check"></i></span>
                             </li>
                             <li>
@@ -648,35 +673,102 @@
                             </li>
                             <li>
                                 <span class="list-name">Live Receptionist</span>
-                                <span class="icon cross"><i class="fas fa-times"></i></span>
+                                <span class="icon check"><i class="fas fa-check"></i></span>
                             </li>
                             <li>
                                 <span class="list-name">Private Limited /LLP Registration</span>
-                                <span class="icon cross"><i class="fas fa-times"></i></span>
+                                <span class="icon check"><i class="fas fa-check"></i></span>
                             </li>
                             <li>
                                 <span class="list-name">CA Fees Included</span>
-                                <span class="icon cross"><i class="fas fa-times"></i></span>
+                                <span class="icon check"><i class="fas fa-check"></i></span>
                             </li>
                         </ul>
-                        <div class="btn"><button>Pay Now</button></div>
+                        <a href="https://wbboffice.com/order.php" style='text-decoration:none;'>
+                            <div class="btn"><button>Pay Now</button></div>
+                        </a>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 js-scroll fade-in-bottom">
+
+
+                <div class="col-lg-3 col-md-6 js-scroll fade-in-bottom">
+                    <div class="table pro">
+                        <!-- <div class="ribbon"><span>Recommend</span></div>-->
+                        <div class="price-section">
+                            <div class="price-area">
+                                <div class="inner-area">
+                                    <span class="text">Rs</span>
+                                    <span class="price">12500</span>
+                                    <span class="text-2">/Yearly</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="package-name"></div>
+                        <ul class="features">
+                            <li>
+                                <span class="list-name">Bangalore - Hsrlayout 7 th sector</span>
+                                <span class="icon check"><i class="fas fa-check"></i></span>
+                            </li>
+                            <li>
+                                <span class="list-name">GST / Company Registration NOC</span>
+                                <span class="icon check"><i class="fas fa-check"></i></span>
+                            </li>
+                            <li>
+                                <span class="list-name">Rental Agreement</span>
+                                <span class="icon check"><i class="fas fa-check"></i></span>
+                            </li>
+                            <li>
+                                <span class="list-name">Utility bill</span>
+                                <span class="icon check"><i class="fas fa-check"></i></span>
+                            </li>
+                            <li>
+                                <span class="list-name">Courier Handling</span>
+                                <span class="icon check"><i class="fas fa-check"></i></span>
+                            </li>
+                            <li>
+                                <span class="list-name">Receptionist basic Services</span>
+                                <span class="icon check"><i class="fas fa-check"></i></span>
+                            </li>
+                            <li>
+                                <span class="list-name">Bangalore Landline Number</span>
+                                <span class="icon check"><i class="fas fa-check"></i></span>
+                            </li>
+                            <li>
+                                <span class="list-name">Live Receptionist</span>
+                                <span class="icon check"><i class="fas fa-check"></i></span>
+                            </li>
+                            <li>
+                                <span class="list-name">Private Limited /LLP Registration</span>
+                                <span class="icon check"><i class="fas fa-check"></i></span>
+                            </li>
+                            <li>
+                                <span class="list-name">CA Fees Included</span>
+                                <span class="icon check"><i class="fas fa-check"></i></span>
+                            </li>
+                        </ul>
+                        <a href="https://wbboffice.com/order.php" style='text-decoration:none;'>
+                            <div class="btn"><button>Pay Now</button></div>
+                        </a>
+                    </div>
+                </div>
+
+
+
+                <div class="col-lg-3 col-md-6 js-scroll fade-in-bottom">
                     <div class="table ultimate">
                         <div class="price-section">
                             <div class="price-area">
                                 <div class="inner-area">
                                     <span class="text">Rs</span>
-                                    <span class="price">2400</span>
-                                    <span class="text-2">Monthly</span>
+                                    <span class="price">11500</span>
+                                    <span class="text-2">/Yearly</span>
                                 </div>
                             </div>
                         </div>
                         <div class="package-name"></div>
                         <ul class="features">
                             <li>
-                                <span class="list-name">Kochi- Panampilly nagar Address</span>
+                                <span class="list-name">Chennai - Little Mount Metro Station</span>
                                 <span class="icon check"><i class="fas fa-check"></i></span>
                             </li>
                             <li>
@@ -716,9 +808,16 @@
                                 <span class="icon check"><i class="fas fa-check"></i></span>
                             </li>
                         </ul>
-                        <div class="btn"><button>Pay Now</button></div>
+                        <a href="https://wbboffice.com/order.php" style='text-decoration:none;'>
+                            <div class="btn"><button>Pay Now</button></div>
+                        </a>
                     </div>
                 </div>
+
+
+            </div>
+            <div class="text-center">
+                <a href="#" class="btn btn-success btn-lg rounded-pill my-btn">Let's Talk</a>
             </div>
         </div>
     </section>
@@ -738,8 +837,14 @@
                         <form action="">
                             <input type="text" class="form-control rounded-pill" placeholder="name">
                             <input type="email" class="form-control mt-4 rounded-pill" placeholder="Email">
+
+                            <div class="input-group mt-4 rounded-pill custom-field">
+                                <input type="text" class="form-control" placeholder="Contact Number">
+                                <button class="btn btn-primary btn-lg ml-4">Send OTP</button>
+                            </div>
+
                             <input type="text" class="form-control mt-4 rounded-pill" placeholder="Phone">
-                            <select name="" class="form-control rounded-pill mt-4">
+                            <select name="" class="form-control rounded-pill mt-4 rounded">
                                 <option>Select</option>
                                 <option>Services One</option>
                                 <option>Services Two</option>
@@ -756,7 +861,7 @@
     <!--================== End yourspace section ==================-->
 
     <!--================== Start Contact-info section ==================-->
-    <section class="you-get-section">
+    <section class="you-get-section pb-5">
         <div class="container">
             <div class="section-heading js-scroll fade-in scrolled">
                 <h2>WHAT YOU GET FROM WBB'S VIRTUAL OFFICE?</h2>
@@ -868,7 +973,7 @@
     <!--================== Start Contact-info section ==================-->
 
     <!--================== Start map Section ==================-->
-    <section>
+    <section class="pt-0" id="map">
 
         <div class="container">
             <div class="row">
@@ -1054,29 +1159,38 @@
 
 
     <!--================== Start Footer section ==================-->
-    <div class="footer">
+    <div class="footer" id="footer">
         <footer>
             <div class="container">
                 <div class="row justify-content-between">
-                    <div class="col-md-4 mb-lg-0">
-                        <a href="index.html"><img src="img/logo-white.png" alt=""></a>
-                        <p class="text-light my-5">Any business need a registration and space to work, here
-                            where
-                            WBB
-                            enters
-                            as a solution. People
-                            can start their business with our innovative service with just thousands of rupees
-                            instead
-                            of
-                            investing couple of Lacks for business registration and office infrastructure.</p>
-                        <ul class="social-link">
-                            <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
-                            <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
-                            <li><a href=""><i class="fa-brands fa-linkedin-in"></i></a></li>
-                        </ul>
+                    <div class="col-md-12 mb-lg-0">
+                        <a href="index.html" class="mb-5 d-block"><img src="img/logo-white.png" alt=""></a>
+                        <div class="row justify-content-between ">
+                            <div class="col-md-10">
+                                <p class="text-light">Any business need a registration and space to work, here
+                                    where
+                                    WBB
+                                    enters
+                                    as a solution. People
+                                    can start their business with our innovative service with just thousands of rupees
+                                    instead
+                                    of
+                                    investing couple of Lacks for business registration and office infrastructure.</p>
+                            </div>
+                            <div class="col-md-2">
+                                <ul class="social-link">
+                                    <li><a href=""><i class="fa-brands fa-facebook-f "></i></a></li>
+                                    <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                                    <li><a href=""><i class="fa-brands fa-linkedin-in"></i></a></li>
+                            </div>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="col-md-2 mt-lg-0 mt-md-5">
-                        <h2 class="fw-bold text-light mb-4 display-6">Useful Links</h2>
+
+                </div>
+                <div class="row mt-5 pt-5">
+                    <div class="col-md-3 mt-lg-0">
+                        <h2 class="fw-bold text-light mb-4 display-7">Useful Links</h2>
                         <ul class="footer-link">
                             <li><a href="index.html">Home</a></li>
                             <li><a href="about.html">About</a></li>
@@ -1085,7 +1199,7 @@
                             <li><a href="contact.html">Contact</a></li>
                         </ul>
                     </div>
-                    <div class="col-md-2 mt-lg-0 mt-md-5">
+                    <div class="col-md-3 mt-lg-0">
                         <h2 class="fw-bold text-light mb-4 display-6">Virtual office</h2>
                         <ul class="footer-link">
                             <li><a href="virtual-office-in-kochi.html">Kochi</a></li>
@@ -1094,7 +1208,7 @@
                             <li><a href="virtual-office-in-kochi.html">DelhiLike</a></li>
                         </ul>
                     </div>
-                    <div class="col-md-3 mt-lg-0 mt-md-5">
+                    <div class="col-md-3 mt-lg-0">
                         <h2 class="fw-bold text-light mb-4 display-6">Co working Space</h2>
                         <ul class="footer-link">
                             <li><a href="coworking-space.html">Kochi</a></li>
@@ -1102,6 +1216,19 @@
                             <li><a href="coworking-space.html">Chennai</a></li>
                             <li><a href="coworking-space.html">DelhiLike</a></li>
                         </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <form action="" class="frm-footer">
+                            <input type="text" class="form-control rounded-pill" placeholder="Full Name">
+                            <input type="text" class="form-control rounded-pill mt-4" placeholder="Email">
+                            <input type="text" class="form-control rounded-pill mt-4" placeholder="Phone Number">
+                            <textarea class="form-control rounded-textarea mt-4" rows="3"
+                                placeholder="Requirments"></textarea>
+                            <div class="text-center">
+                                <input type="button" value="Send Message"
+                                    class="btn btn-info mt-3 m-auto btn-lg rounded-pill px-3 py-3">
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -1120,6 +1247,8 @@
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/fontawsome.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
+    <script src="js/uikit.min.js"></script>
+    <script src="js/uikit-icons.js"></script>
     <script src="js/script.js"></script>
 
 </body>

@@ -100,7 +100,7 @@ h5 {
 }
 .form-control {
   font-size: 1.6rem;
-  padding: 1rem;
+  padding: 1.2rem;
 }
 
 .modal-backdrop.show {
@@ -333,6 +333,7 @@ header {
 .navbar-expand-lg .navbar-nav .nav-link {
   padding-left: 0;
   padding-right: 0;
+  text-decoration: none;
 }
 .nav-item a {
   color: var(--black-color) !important;
@@ -734,7 +735,9 @@ nav nav-pills {
 }
 .nav-pills .nav-link {
   color: var(--black-color);
-  font-weight: 600;
+  font-weight: 700;
+  font-size: 2rem;
+  padding: 1rem 3rem;
 }
 /* contact info section */
 .g-box {
@@ -790,7 +793,7 @@ nav nav-pills {
 .table {
   background: #fff;
   margin: 1.5rem 0;
-  padding: 3rem 3rem;
+  padding: 3rem 2rem;
   position: relative;
   -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
@@ -1036,4 +1039,38 @@ nav nav-pills {
 }
 .mlight-btn {
   color: #fff !important;
+}
+.pro ::selection,
+.pro .price-area,
+.pro .inner-area,
+.pro .btn button {
+  background: #fcec03;
+}
+.pro .package-name {
+  background: #fcec03;
+}
+.pro .package-name::before {
+  content: "BANGALORE";
+  font-size: 2rem;
+}
+.btn {
+  padding: 1rem;
+}
+.my-btn {
+  margin-top: 4rem;
+  padding: 1.5rem 5rem;
+  display: inline-block;
+  font-size: 1.9rem;
+  font-weight: 600;
+}
+.custom-field input {
+  border-radius: 3rem 0 0 3rem;
+}
+.custom-field button {
+  border-radius: 0 3rem 3rem 0;
+}
+.frm-footer {
+  background: #0c1222;
+  padding: 2rem;
+  border-radius: 4rem;
 }
