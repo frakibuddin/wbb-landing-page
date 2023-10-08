@@ -35,6 +35,19 @@ p {
   font-weight: 500;
   font-size: 1.8rem;
 }
+* + address,
+* + dl,
+* + fieldset,
+* + figure,
+* + ol,
+* + p,
+* + pre,
+* + ul {
+  margin-top: 0;
+}
+a {
+  text-decoration: none !important;
+}
 h1,
 h3,
 h2,
@@ -674,11 +687,11 @@ ul {
 .hero-heading h1 {
   font-size: 5rem;
   font-weight: 800;
-  background: linear-gradient(to right, #f32170, #ff6b08, #cf23cf, #eedd44);
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
+  color: #fff !important;
 }
-
+.hero-heading h1 span {
+  line-height: 3rem;
+}
 .hero-heading h2 {
   font-size: 3rem;
   font-weight: 600;
